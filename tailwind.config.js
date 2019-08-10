@@ -9,6 +9,13 @@ module.exports = {
     fontFamily: {
       display: ['rift', 'sans-serif'],
     },
+    height: {
+      'screen': '90vh'
+    },
+    minHeight: {
+      'tall': '85vh',
+      'screen': '100vh'
+    },
     fontSize: {
         'sm': '16px',
         'lg': '24px',
