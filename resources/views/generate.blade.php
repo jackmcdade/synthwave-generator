@@ -16,5 +16,12 @@
         <h1 class="text-2xl md:text-3xl font-display text-white leading-tight text-shadow font-display py-8">{{ $name }}</h1>
         <a href="https://jackmcdade.com" class="font-display text-lg hover:text-purple text-pink">Created by Jack McDade</a>
     </div>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145403615-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-145403615-1');
+    </script>
 </body>
 </html>
