@@ -4,6 +4,8 @@
 
 body {
     font-family: rift, sans-serif;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .text-shadow {
