@@ -10,11 +10,11 @@
 </head>
 <body class="bg-dark text-white font-display">
     <div class="flex flex-col items-center justify-center relative min-h-tall md:min-h-screen h-full w-full md:-mt-12 grid">
-        <div class="text-center font-display text-white w-full font-display text-lg">
+        <div class="text-center font-display text-white w-full font-display text-lg relative z-10">
             Synthwave Band Name Generator
         </div>
-        <h1 class="text-2xl md:text-3xl xl:text-4xl font-display text-white leading-tight text-shadow font-display py-8">{{ $name }}</h1>
-        <a href="https://jackmcdade.com" class="font-display text-lg hover:text-purple text-pink">Created by Jack McDade</a>
+        <h1 class="text-2xl md:text-3xl xl:text-4xl font-display text-white leading-tight text-shadow relative z-10 font-display py-8">{{ $name }}</h1>
+        <a href="https://jackmcdade.com" class="font-display text-lg hover:text-purple text-pink relative z-10">Created by Jack McDade</a>
     </div>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145403615-1"></script>
     <script>
