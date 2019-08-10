@@ -13,7 +13,8 @@ module.exports = {
         'sm': '16px',
         'lg': '24px',
         'xl': '36px',
-        '2xl': '96px'
+        '2xl': '48px',
+        '3xl': '96px'
     },
     extend: {}
   },
