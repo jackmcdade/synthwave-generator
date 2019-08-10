@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body class="bg-dark text-white font-display">
-    <div class="flex flex-col items-center justify-center relative min-h-tall md:min-h-screen h-full w-full -mt-12">
+    <div class="flex flex-col items-center justify-center relative min-h-tall md:min-h-screen h-full w-full md:-mt-12">
         <div class="text-center font-display text-white w-full font-display text-lg">
             Synthwave Band Name Generator
         </div>
