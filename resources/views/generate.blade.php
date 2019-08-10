@@ -7,9 +7,10 @@
     <link href="/css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/buw1cbh.css">
 </head>
-<body class="bg-gray-100">
-    <div class="flex items-center justify-center min-h-screen w-full">
-        <h1 class="text-6xl font-display">{{ $name }}</h1>
+<body class="bg-dark">
+    <div class="text-center text-white pt-16 absolute pin w-full font-display text-lg">Synthwave Name Generator</div>
+    <div class="flex items-center justify-center min-h-screen w-full -mt-4">
+        <h1 class="text-xl text-white text-shadow font-display">{{ $name }}</h1>
     </div>
 </body>
 </html>
