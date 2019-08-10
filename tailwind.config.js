@@ -10,8 +10,10 @@ module.exports = {
       display: ['rift', 'sans-serif'],
     },
     fontSize: {
+        'sm': '16px',
         'lg': '24px',
-        'xl': '96px'
+        'xl': '36px',
+        '2xl': '96px'
     },
     extend: {}
   },
