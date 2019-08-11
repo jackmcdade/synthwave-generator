@@ -197,10 +197,6 @@ class Controller extends BaseController
         return Arr::random([' ', ' ', ' ', ' ', '']);
     }
 
-    public function coinFlip() {
-        return Arr::random([true, false]);
-    }
-
     public function roll($sides = 20, $weighted = false) {
         return Arr::random(array_pad([true], $sides - 1, $weighted));
     }
