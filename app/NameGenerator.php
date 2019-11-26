@@ -94,6 +94,7 @@ class NameGenerator
         ['word' => 'Glitch or', 'prefix' => true, 'seperator' => ' '],
         ['word' => 'Skate or', 'prefix' => true, 'seperator' => ' '],
         ['word' => 'or Die', 'suffix' => true, 'seperator' => ' ', 'not' => ['Glitch or', 'Skate or', 'Hackers &', 'Lazers &', 'Waves of', 'Summer of']],
+        ['word' => 'Venom or', 'prefix' => true],
     ];
 
     public $years = [
