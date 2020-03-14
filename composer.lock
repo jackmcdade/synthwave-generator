@@ -11,12 +11,12 @@
             "version": "v0.2.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/calebporzio/livewire.git",
+                "url": "https://github.com/livewire/livewire.git",
                 "reference": "6ba2eb928778b3b3f5bf5aba5d9a49582ee43bd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/calebporzio/livewire/zipball/6ba2eb928778b3b3f5bf5aba5d9a49582ee43bd0",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/6ba2eb928778b3b3f5bf5aba5d9a49582ee43bd0",
                 "reference": "6ba2eb928778b3b3f5bf5aba5d9a49582ee43bd0",
                 "shasum": ""
             },
@@ -57,6 +57,7 @@
                 }
             ],
             "description": "Build and test rich client-side functionality: with only backend code.",
+            "abandoned": "livewire/livewire",
             "time": "2019-08-09T12:29:39+00:00"
         },
         {
