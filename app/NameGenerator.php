@@ -32,6 +32,7 @@ class NameGenerator
         ['word' => 'Laser'],
         ['word' => 'Lazer'],
         ['word' => 'Cobra'],
+        ['word' => 'Kobra'],
         ['word' => 'Combo'],
         ['word' => 'Ultra'],
         ['word' => 'Streets of', 'prefix' => true, 'separator' => ' '],
@@ -95,6 +96,10 @@ class NameGenerator
         ['word' => 'Skate or', 'prefix' => true, 'separator' => ' '],
         ['word' => 'or Die', 'suffix' => true, 'separator' => ' ', 'not' => ['Glitch or', 'Skate or', 'Hackers &', 'Lazers &', 'Waves of', 'Summer of']],
         ['word' => 'Venom or', 'prefix' => true],
+        ['word' => 'Elite'],
+        ['word' => 'Modem'],
+        ['word' => 'Quicksand'],
+        ['word' => 'Kids', 'suffix' => true],
     ];
 
     public $years = [
