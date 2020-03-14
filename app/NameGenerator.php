@@ -34,15 +34,15 @@ class NameGenerator
         ['word' => 'Cobra'],
         ['word' => 'Combo'],
         ['word' => 'Ultra'],
-        ['word' => 'Streets of', 'prefix' => true, 'seperator' => ' '],
+        ['word' => 'Streets of', 'prefix' => true, 'separator' => ' '],
         ['word' => 'October', 'plural' => false],
         ['word' => 'July', 'plural' => false],
         ['word' => 'August', 'plural' => false],
         ['word' => 'Summer'],
-        ['word' => 'Summer of', 'prefix' => true, 'seperator' => ' '],
+        ['word' => 'Summer of', 'prefix' => true, 'separator' => ' '],
         ['word' => 'Endless', 'prefix' => true],
         ['word' => 'Boys', 'suffix' => true],
-        ['word' => 'Boys of', 'prefix' => true, 'seperator' => ' '],
+        ['word' => 'Boys of', 'prefix' => true, 'separator' => ' '],
         ['word' => 'Tech'],
         ['word' => 'Neon'],
         ['word' => 'Neo'],
@@ -51,8 +51,8 @@ class NameGenerator
         ['word' => 'Strike'],
         ['word' => 'Fist'],
         ['word' => 'Battle'],
-        ['word' => 'scape', 'suffix' => true, 'seperator' => ''],
-        ['word' => 'tron', 'suffix' => true, 'seperator' => ''],
+        ['word' => 'scape', 'suffix' => true, 'separator' => ''],
+        ['word' => 'tron', 'suffix' => true, 'separator' => ''],
         ['word' => 'Hacker'],
         ['word' => 'Surfer', 'suffix' => true],
         ['word' => 'FM', 'not' => ['83']],
@@ -68,8 +68,8 @@ class NameGenerator
         ['word' => 'Power'],
         ['word' => 'Lightning'],
         ['word' => 'Glove'],
-        ['word' => 'Lazers &', 'prefix' => true, 'seperator' => ' '],
-        ['word' => 'Hackers &', 'prefix' => true, 'seperator' => ' '],
+        ['word' => 'Lazers &', 'prefix' => true, 'separator' => ' '],
+        ['word' => 'Hackers &', 'prefix' => true, 'separator' => ' '],
         ['word' => 'Rider', 'prefix' => true],
         ['word' => 'Storm'],
         ['word' => 'Miami'],
@@ -85,15 +85,15 @@ class NameGenerator
         ['word' => 'Analog', 'prefix' => true],
         ['word' => 'Electro', 'prefix' => true],
         ['word' => 'Attack', 'not' => ['FM']],
-        ['word' => 'Waves of', 'prefix' => true, 'seperator' => ' '],
+        ['word' => 'Waves of', 'prefix' => true, 'separator' => ' '],
         ['word' => 'Gamer'],
         ['word' => 'Highscore'],
-        ['word' => 'Game Over', 'seperator' => ' '],
-        ['word' => 'Story Mode', 'plural' => false, 'seperator' => ' '],
+        ['word' => 'Game Over', 'separator' => ' '],
+        ['word' => 'Story Mode', 'plural' => false, 'separator' => ' '],
         ['word' => 'Glitch'],
-        ['word' => 'Glitch or', 'prefix' => true, 'seperator' => ' '],
-        ['word' => 'Skate or', 'prefix' => true, 'seperator' => ' '],
-        ['word' => 'or Die', 'suffix' => true, 'seperator' => ' ', 'not' => ['Glitch or', 'Skate or', 'Hackers &', 'Lazers &', 'Waves of', 'Summer of']],
+        ['word' => 'Glitch or', 'prefix' => true, 'separator' => ' '],
+        ['word' => 'Skate or', 'prefix' => true, 'separator' => ' '],
+        ['word' => 'or Die', 'suffix' => true, 'separator' => ' ', 'not' => ['Glitch or', 'Skate or', 'Hackers &', 'Lazers &', 'Waves of', 'Summer of']],
         ['word' => 'Venom or', 'prefix' => true],
     ];
 
@@ -128,8 +128,8 @@ class NameGenerator
         $words[] = Arr::get($this->second, 'word');
 
         // Join 'em
-        $seperator = $this->getSeperator();
-        $this->name = implode($seperator, $words);
+        $separator = $this->getseparator();
+        $this->name = implode($separator, $words);
 
         // Decide if it should be plural
         if ($this->roll(12) && Arr::get($this->second, 'plural') !== false) {
@@ -138,7 +138,7 @@ class NameGenerator
 
         // Decide if there should be a year at the end
         if ($this->roll(5)) {
-            if ($seperator !== '') {
+            if ($separator !== '') {
                 $this->name .= ' ';
             }
             $this->name .= $this->getYear();
@@ -180,9 +180,9 @@ class NameGenerator
         return Arr::random($this->years);
     }
 
-    public function getSeperator() {
-        if ($seperator = Arr::get($this->first, 'seperator')) return $seperator;
-        if ($seperator = Arr::get($this->second, 'seperator')) return $seperator;
+    public function getseparator() {
+        if ($separator = Arr::get($this->first, 'separator')) return $separator;
+        if ($separator = Arr::get($this->second, 'separator')) return $separator;
 
         return Arr::random([' ', ' ', ' ', ' ', '']);
     }
