@@ -129,7 +129,7 @@ class NameGenerator
 
         // Join 'em
         $seperator = $this->getSeperator();
-        $this->name = implode($words, $seperator);
+        $this->name = implode($seperator, $words);
 
         // Decide if it should be plural
         if ($this->roll(12) && Arr::get($this->second, 'plural') !== false) {
